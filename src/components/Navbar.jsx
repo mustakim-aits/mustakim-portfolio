@@ -53,7 +53,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
     >
       {/* Scroll Progress Line */}
       <div
-        className="h-[3px] bg-gradient-to-r from-sky-400 via-cyan-400 to-indigo-primary transition-all duration-75 origin-left"
+        className="h-[3px] bg-white transition-all duration-75 origin-left"
         style={{ width: `${scrollProgress}%` }}
       />
       <div className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-0">
@@ -69,7 +69,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
               href="#home"
               className="flex items-center gap-4 text-text hover:opacity-90 transition-all"
             >
-              <div className="text-5xl leading-none tracking-[-0.12em] bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent font-black font-display select-none">
+              <div className="text-5xl leading-none tracking-[-0.12em] text-white font-black font-display select-none">
                 MP
               </div>
               <span className="font-extrabold text-lg tracking-tight text-white font-display select-none">

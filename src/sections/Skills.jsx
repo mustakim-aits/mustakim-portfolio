@@ -62,7 +62,7 @@ export const Skills = () => {
               My Skills
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-text font-display leading-tight">
-              Technologies I <span className="bg-gradient-to-r from-sky-400 to-indigo-primary bg-clip-text text-transparent">work with</span>
+              Technologies I <span className="text-white">work with</span>
             </h2>
             <p className="text-text-muted text-sm sm:text-base leading-relaxed max-w-xl">
               I enjoy working with modern technologies and tools to build efficient, scalable and user-friendly applications.

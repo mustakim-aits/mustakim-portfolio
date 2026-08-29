@@ -9,9 +9,9 @@
   --font-display: 'Plus Jakarta Sans', var(--font-sans);
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Custom palette colors matching portrait photo's cyan rim lighting */
-  --color-indigo-primary: #00d8ff;
-  --color-violet-secondary: #0ea5e9;
+  /* Custom palette colors set to white */
+  --color-indigo-primary: #FFFFFF;
+  --color-violet-secondary: #FFFFFF;
   
   /* Semantic tokens linked to CSS custom properties */
   --color-bg-base: var(--bg-base);
@@ -47,14 +47,14 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Dark Mode Variables (Pure Pitch-Black Theme) */
+/* Dark Mode Variables (Pure Black Theme with White Text) */
 :root.dark {
   --bg-base: #000000;
   --bg-sec: #070707;
   --card-bg: #0e0e0e;
-  --text-color: #F8FAFC;
-  --text-muted: #94A3B8;
-  --border-color: #1a1a1a;
+  --text-color: #FFFFFF;
+  --text-muted: #CBD5E1;
+  --border-color: #222222;
 }
 
 /* Apply base styling resets */

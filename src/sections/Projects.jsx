@@ -202,7 +202,7 @@ export const Projects = ({ onSelectProject }) => {
               My Projects
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-text font-display leading-tight">
-              Real Projects. <span className="bg-gradient-to-r from-sky-400 to-indigo-primary bg-clip-text text-transparent">Real Impact.</span>
+              Real Projects. <span className="text-white">Real Impact.</span>
             </h2>
             <p className="text-text-muted text-sm sm:text-base leading-relaxed max-w-xl">
               Here are some of the projects I've built, showcasing my skills in web & mobile development, problem solving and creativity.

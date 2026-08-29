@@ -23,7 +23,7 @@ export const Footer = () => {
               href="#home"
               className="text-lg font-bold font-display tracking-tight text-text hover:text-indigo-primary transition-all duration-300 flex items-center gap-2"
             >
-              <span className="text-xl font-black bg-gradient-to-r from-sky-400 to-indigo-primary bg-clip-text text-transparent select-none font-display">
+              <span className="text-xl font-black text-white select-none font-display">
                 MP
               </span>
               <span className="font-bold text-sm tracking-tight select-none">Mustakim Pathan</span>
