@@ -68,7 +68,7 @@ export const About = () => {
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-text font-display leading-tight">
                 Get to know <br />
-                me <span className="text-white">better</span>
+                me <span className="bg-gradient-to-r from-[#00A3FF] via-[#70C8FF] to-white bg-clip-text text-transparent">better</span>
               </h2>
               <p className="text-text-muted text-sm sm:text-base leading-relaxed">
                 I'm a passionate React Native Developer who loves building scalable, user-friendly web & mobile applications.

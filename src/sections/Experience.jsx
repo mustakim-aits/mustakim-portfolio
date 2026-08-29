@@ -43,7 +43,7 @@ export const Experience = () => {
               My Journey
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-text font-display leading-tight">
-              My <span className="text-white">Experience</span>
+              My <span className="bg-gradient-to-r from-[#00A3FF] via-[#70C8FF] to-white bg-clip-text text-transparent">Experience</span>
             </h2>
             <p className="text-text-muted text-sm sm:text-base leading-relaxed max-w-xl">
               A timeline of my professional journey and the impact I've created through the work I do.

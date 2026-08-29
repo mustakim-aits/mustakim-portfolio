@@ -98,7 +98,7 @@ export const Contact = () => {
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-text font-display leading-tight">
                 Let's Build Something <br className="hidden sm:inline" />
-                <span className="text-white">Amazing Together</span>
+                <span className="bg-gradient-to-r from-[#00A3FF] via-[#70C8FF] to-white bg-clip-text text-transparent">Amazing Together</span>
               </h2>
               <p className="text-text-muted text-xs sm:text-sm leading-relaxed max-w-md">
                 Have a project in mind or want to collaborate? I'm always open to discussing new opportunities and business ideas.

@@ -9,9 +9,9 @@
   --font-display: 'Plus Jakarta Sans', var(--font-sans);
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Custom palette colors set to white */
-  --color-indigo-primary: #FFFFFF;
-  --color-violet-secondary: #FFFFFF;
+  /* Custom palette colors matched to electric blue -> sky blue -> white gradient theme */
+  --color-indigo-primary: #00A3FF;
+  --color-violet-secondary: #70C8FF;
   
   /* Semantic tokens linked to CSS custom properties */
   --color-bg-base: var(--bg-base);
@@ -47,14 +47,14 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Dark Mode Variables (Pure Black Theme with White Text) */
+/* Dark Mode Variables (Pure Pitch Black with Electric Blue/Sky Blue Theme) */
 :root.dark {
   --bg-base: #000000;
   --bg-sec: #070707;
   --card-bg: #0e0e0e;
   --text-color: #FFFFFF;
   --text-muted: #CBD5E1;
-  --border-color: #222222;
+  --border-color: #1e1e1e;
 }
 
 /* Apply base styling resets */
@@ -78,7 +78,7 @@ body::before {
   pointer-events: none;
   background: radial-gradient(
     600px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
-    rgba(0, 216, 255, 0.09),
+    rgba(0, 163, 255, 0.12),
     transparent 80%
   );
   transition: background-color 0.3s ease;
@@ -87,7 +87,7 @@ body::before {
 body.light::before {
   background: radial-gradient(
     600px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
-    rgba(0, 216, 255, 0.04),
+    rgba(0, 163, 255, 0.05),
     transparent 80%
   );
 }
@@ -108,18 +108,18 @@ body.light::before {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00d8ff;
+  background: #00a3ff;
 }
 
 /* Selection Highlight */
 ::selection {
-  background-color: rgba(0, 216, 255, 0.25);
+  background-color: rgba(0, 163, 255, 0.3);
   color: inherit;
 }
 
 /* Custom focus states for accessibility */
 *:focus-visible {
-  outline: 2px solid #00d8ff;
+  outline: 2px solid #00a3ff;
   outline-offset: 4px;
 }
 
