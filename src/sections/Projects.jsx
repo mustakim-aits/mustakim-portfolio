@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { ArrowRight, Layers, LayoutGrid, Sliders } from "lucide-react";
+import { ArrowRight, Layers } from "lucide-react";
 import { projectsData } from "../data/projects";
 import { CoverflowCarousel } from "@/components/ui/coverflow-carousel";
-import { CardsParallax } from "@/components/ui/scroll-cards";
 
 // Mock CSS components for the device representations
 const PhoneMockup = () => (
@@ -63,7 +62,6 @@ const BrowserMockup = () => (
 
 export const Projects = ({ onSelectProject }) => {
   const [filter, setFilter] = useState("all");
-  const [viewMode, setViewMode] = useState("coverflow"); // "coverflow" | "scroll"
 
   const filterOptions = [
     { label: "All", value: "all" },
@@ -250,64 +248,24 @@ export const Projects = ({ onSelectProject }) => {
               </button>
             ))}
           </div>
-
-          {/* View Mode Switcher */}
-          <div className="flex items-center gap-1.5 p-1 bg-card border border-border rounded-xl">
-            <button
-              onClick={() => setViewMode("coverflow")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-colors cursor-pointer ${
-                viewMode === "coverflow"
-                  ? "bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] text-white"
-                  : "text-text-muted hover:text-text"
-              }`}
-            >
-              <Sliders className="w-3.5 h-3.5" />
-              3D Coverflow
-            </button>
-            
-            <button
-              onClick={() => setViewMode("scroll")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-colors cursor-pointer ${
-                viewMode === "scroll"
-                  ? "bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] text-white"
-                  : "text-text-muted hover:text-text"
-              }`}
-            >
-              <LayoutGrid className="w-3.5 h-3.5" />
-              Scroll Parallax
-            </button>
-          </div>
         </div>
 
         {/* Dynamic Project Display */}
         {filteredProjects.length > 0 ? (
-          viewMode === "coverflow" ? (
-            <div className="w-full relative">
-              <CoverflowCarousel
-                key={filter}
-                slides={coverflowSlides}
-                cardWidth="clamp(280px, 80vw, 350px)"
-                showNavigation={true}
-                showPagination={true}
-                onCardClick={(slide) => {
-                  if (slide.project) {
-                    onSelectProject(slide.project);
-                  }
-                }}
-              />
-            </div>
-          ) : (
-            <div className="w-full relative">
-              <CardsParallax
-                items={scrollCardItems}
-                onCardClick={(item) => {
-                  if (item.project) {
-                    onSelectProject(item.project);
-                  }
-                }}
-              />
-            </div>
-          )
+          <div className="w-full relative">
+            <CoverflowCarousel
+              key={filter}
+              slides={coverflowSlides}
+              cardWidth="clamp(280px, 80vw, 350px)"
+              showNavigation={true}
+              showPagination={true}
+              onCardClick={(slide) => {
+                if (slide.project) {
+                  onSelectProject(slide.project);
+                }
+              }}
+            />
+          </div>
         ) : (
           <div className="py-16 text-center text-text-muted text-sm">
             No projects found in this category.
