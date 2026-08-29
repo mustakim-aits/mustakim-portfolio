@@ -9,9 +9,9 @@
   --font-display: 'Plus Jakarta Sans', var(--font-sans);
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Custom palette colors */
-  --color-indigo-primary: #6366F1;
-  --color-violet-secondary: #8B5CF6;
+  /* Custom palette colors matching portrait photo's cyan rim lighting */
+  --color-indigo-primary: #00d8ff;
+  --color-violet-secondary: #0ea5e9;
   
   /* Semantic tokens linked to CSS custom properties */
   --color-bg-base: var(--bg-base);
@@ -47,14 +47,14 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Dark Mode Variables (Default as requested by the user) */
+/* Dark Mode Variables (Matched to portrait photo's studio dark black & cyan edge glow) */
 :root.dark {
-  --bg-base: #080B12;
-  --bg-sec: #0E131D;
-  --card-bg: #121925;
+  --bg-base: #030509;
+  --bg-sec: #090e17;
+  --card-bg: #0f1624;
   --text-color: #F8FAFC;
   --text-muted: #94A3B8;
-  --border-color: #1E293B;
+  --border-color: #1a2538;
 }
 
 /* Apply base styling resets */
@@ -78,7 +78,7 @@ body::before {
   pointer-events: none;
   background: radial-gradient(
     600px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
-    rgba(99, 102, 241, 0.08),
+    rgba(0, 216, 255, 0.09),
     transparent 80%
   );
   transition: background-color 0.3s ease;
@@ -87,7 +87,7 @@ body::before {
 body.light::before {
   background: radial-gradient(
     600px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
-    rgba(99, 102, 241, 0.03),
+    rgba(0, 216, 255, 0.04),
     transparent 80%
   );
 }
@@ -108,18 +108,18 @@ body.light::before {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6366F1;
+  background: #00d8ff;
 }
 
 /* Selection Highlight */
 ::selection {
-  background-color: rgba(99, 102, 241, 0.25);
+  background-color: rgba(0, 216, 255, 0.25);
   color: inherit;
 }
 
 /* Custom focus states for accessibility */
 *:focus-visible {
-  outline: 2px solid #6366F1;
+  outline: 2px solid #00d8ff;
   outline-offset: 4px;
 }
 
