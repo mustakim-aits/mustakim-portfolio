@@ -47,13 +47,13 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#080d16]/90 backdrop-blur-md border-b border-white/10 shadow-xl"
+          ? "bg-black/90 backdrop-blur-md border-b border-white/10 shadow-xl"
           : "bg-transparent border-b border-transparent"
       }`}
     >
       {/* Scroll Progress Line */}
       <div
-        className="h-[3px] bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 transition-all duration-75 origin-left"
+        className="h-[3px] bg-gradient-to-r from-sky-400 via-cyan-400 to-indigo-primary transition-all duration-75 origin-left"
         style={{ width: `${scrollProgress}%` }}
       />
       <div className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-0">
@@ -205,7 +205,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-[#0a0f1d] border-b border-slate-800 shadow-xl overflow-hidden"
+            className="lg:hidden bg-[#080808] border-b border-white/10 shadow-xl overflow-hidden"
           >
             <div className="px-4 pt-2 pb-6 space-y-2">
               {navItems.map((item) => (

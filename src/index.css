@@ -47,14 +47,14 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Dark Mode Variables (Matched to portrait photo's studio dark black & cyan edge glow) */
+/* Dark Mode Variables (Pure Pitch-Black Theme) */
 :root.dark {
-  --bg-base: #030509;
-  --bg-sec: #090e17;
-  --card-bg: #0f1624;
+  --bg-base: #000000;
+  --bg-sec: #070707;
+  --card-bg: #0e0e0e;
   --text-color: #F8FAFC;
   --text-muted: #94A3B8;
-  --border-color: #1a2538;
+  --border-color: #1a1a1a;
 }
 
 /* Apply base styling resets */
