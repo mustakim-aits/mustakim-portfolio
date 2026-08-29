@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Moon, Menu, X, FileText, Terminal as TerminalIcon, Code, ArrowRight } from "lucide-react";
+import logoImg from "../assets/logo.png";
 
 export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,11 +68,9 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
           >
             <a
               href="#home"
-              className="flex items-center gap-4 text-text hover:opacity-90 transition-all"
+              className="flex items-center gap-3 text-text hover:opacity-95 transition-all group"
             >
-              <div className="text-5xl leading-none tracking-[-0.12em] bg-gradient-to-r from-[#00A3FF] via-[#70C8FF] to-white bg-clip-text text-transparent font-black font-display select-none">
-                MP
-              </div>
+              <img src={logoImg} alt="MP Logo" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
               <span className="font-extrabold text-lg tracking-tight text-white font-display select-none">
                 Mustakim Pathan
               </span>

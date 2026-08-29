@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react";
+import logoImg from "../assets/logo.png";
 
 export const Footer = () => {
   const footerLinks = [
@@ -21,11 +22,9 @@ export const Footer = () => {
           <div className="md:col-span-7 space-y-4">
             <a
               href="#home"
-              className="text-lg font-bold font-display tracking-tight text-text hover:text-indigo-primary transition-all duration-300 flex items-center gap-2"
+              className="text-lg font-bold font-display tracking-tight text-text hover:opacity-90 transition-all duration-300 flex items-center gap-3 group"
             >
-              <span className="text-xl font-black bg-gradient-to-r from-[#00A3FF] via-[#70C8FF] to-white bg-clip-text text-transparent select-none font-display">
-                MP
-              </span>
+              <img src={logoImg} alt="Mustakim Pathan Logo" className="h-9 w-auto object-contain transition-transform group-hover:scale-105" />
               <span className="font-bold text-sm tracking-tight select-none">Mustakim Pathan</span>
             </a>
             <p className="text-text-muted text-xs sm:text-sm max-w-md leading-relaxed">
