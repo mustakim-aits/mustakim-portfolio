@@ -96,7 +96,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
                   {isActive && (
                     <motion.div
                       layoutId="activeNavIndicator"
-                      className="absolute bottom-0 left-3.5 right-3.5 h-[2px] bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                      className="absolute bottom-0 left-3.5 right-3.5 h-[2px] bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] rounded-full"
                     />
                   )}
                 </a>
@@ -138,7 +138,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
             {/* Code Console Button </> */}
             <button
               onClick={onOpenConsole}
-              className="p-2.5 rounded-xl bg-indigo-950/60 border border-indigo-800/60 text-indigo-400 hover:text-indigo-300 hover:border-indigo-600 transition-all duration-300 cursor-pointer flex items-center justify-center shadow-sm"
+              className="p-2.5 rounded-xl bg-[#00A3FF]/10 border border-[#00A3FF]/30 text-[#00A3FF] hover:text-white hover:border-[#00A3FF] transition-all duration-300 cursor-pointer flex items-center justify-center shadow-sm"
               title="Open Command Terminal"
               aria-label="Open Command Terminal"
             >
@@ -161,7 +161,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
             {/* Gradient Contact Me CTA */}
             <a
               href="#contact"
-              className="px-5 py-2.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-lg shadow-indigo-600/30 flex items-center gap-1.5 transition-all duration-300 transform hover:-translate-y-0.5"
+              className="px-5 py-2.5 bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] hover:opacity-95 text-white font-bold text-xs sm:text-sm rounded-xl shadow-lg shadow-[#00A3FF]/25 flex items-center gap-1.5 transition-all duration-300 transform hover:-translate-y-0.5"
             >
               Contact Me
               <ArrowRight className="w-4 h-4" />
@@ -250,7 +250,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
 
                 <a
                   href="#contact"
-                  className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl text-xs font-bold shadow-md"
+                  className="px-5 py-2.5 bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] hover:opacity-95 text-white rounded-xl text-xs font-bold shadow-md shadow-[#00A3FF]/25"
                 >
                   Contact Me →
                 </a>
