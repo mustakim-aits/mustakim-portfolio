@@ -276,7 +276,7 @@ export const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3 px-6 bg-gradient-to-r from-sky-500 via-indigo-primary to-violet-secondary hover:opacity-95 text-white font-semibold rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-indigo-primary/10 transition-all duration-300 transform hover:-translate-y-0.5 disabled:opacity-75 disabled:hover:translate-y-0 cursor-pointer text-xs"
+                  className="w-full py-3 px-6 bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] hover:opacity-95 text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-[#00A3FF]/25 transition-all duration-300 transform hover:-translate-y-0.5 disabled:opacity-75 disabled:hover:translate-y-0 cursor-pointer text-xs"
                 >
                   {isSubmitting ? (
                     <span className="w-4 h-4 border-2 border-white/35 border-t-white rounded-full animate-spin" />

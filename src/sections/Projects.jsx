@@ -242,8 +242,8 @@ export const Projects = ({ onSelectProject }) => {
                 onClick={() => setFilter(opt.value)}
                 className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300 border cursor-pointer ${
                   filter === opt.value
-                    ? "bg-indigo-primary border-indigo-primary text-white shadow-md shadow-indigo-primary/15"
-                    : "bg-card border-border text-text-muted hover:text-text hover:border-indigo-primary/45"
+                    ? "bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] border-transparent text-white shadow-md shadow-[#00A3FF]/25"
+                    : "bg-card border-border text-text-muted hover:text-text hover:border-[#00A3FF]/45"
                 }`}
               >
                 {opt.label}
@@ -257,7 +257,7 @@ export const Projects = ({ onSelectProject }) => {
               onClick={() => setViewMode("coverflow")}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-colors cursor-pointer ${
                 viewMode === "coverflow"
-                  ? "bg-indigo-primary text-white"
+                  ? "bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] text-white"
                   : "text-text-muted hover:text-text"
               }`}
             >
@@ -269,7 +269,7 @@ export const Projects = ({ onSelectProject }) => {
               onClick={() => setViewMode("scroll")}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-colors cursor-pointer ${
                 viewMode === "scroll"
-                  ? "bg-indigo-primary text-white"
+                  ? "bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] text-white"
                   : "text-text-muted hover:text-text"
               }`}
             >
@@ -334,7 +334,7 @@ export const Projects = ({ onSelectProject }) => {
 
           <a
             href="#contact"
-            className="px-6 py-3 bg-indigo-primary hover:bg-indigo-primary/95 text-white font-bold rounded-xl text-xs flex items-center gap-1.5 transition-all duration-300 transform hover:-translate-y-0.5 z-10 flex-shrink-0 shadow-md shadow-indigo-primary/10 cursor-pointer"
+            className="px-6 py-3 bg-gradient-to-r from-[#00A3FF] to-[#70C8FF] hover:opacity-95 text-white font-bold rounded-xl text-xs flex items-center gap-1.5 transition-all duration-300 transform hover:-translate-y-0.5 z-10 flex-shrink-0 shadow-md shadow-[#00A3FF]/25 cursor-pointer"
           >
             Get in Touch
             <ArrowRight className="w-3.5 h-3.5" />
