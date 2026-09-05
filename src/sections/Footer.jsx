@@ -25,7 +25,6 @@ export const Footer = () => {
               className="text-lg font-bold font-display tracking-tight text-text hover:opacity-90 transition-all duration-300 flex items-center gap-3 group"
             >
               <img src={logoImg} alt="Mustakim Pathan Logo" className="h-9 w-auto object-contain transition-transform group-hover:scale-105" />
-              <span className="font-bold text-sm tracking-tight select-none">Mustakim Pathan</span>
             </a>
             <p className="text-text-muted text-xs sm:text-sm max-w-md leading-relaxed">
               Building digital experiences that are fast, reliable and user-focused.
