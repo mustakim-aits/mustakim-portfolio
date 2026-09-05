@@ -60,21 +60,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
       <div className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-0">
         <div className="flex items-center justify-between h-20">
           
-          {/* Logo / Name */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex-shrink-0"
-          >
-            <a
-              href="#home"
-              className="flex items-center gap-3 text-text hover:opacity-95 transition-all group"
-            >
-              <span className="font-extrabold text-lg tracking-tight text-white font-display select-none">
-                Mustakim Pathan
-              </span>
-            </a>
-          </motion.div>
+
 
           {/* Center Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-2">
