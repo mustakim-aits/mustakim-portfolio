@@ -70,7 +70,9 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
               href="#home"
               className="flex items-center gap-3 text-text hover:opacity-95 transition-all group"
             >
-              <img src="/logo.png" alt="MP Logo" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+              <span className="font-extrabold text-lg tracking-tight text-white font-display select-none">
+                Mustakim Pathan
+              </span>
             </a>
           </motion.div>
 
