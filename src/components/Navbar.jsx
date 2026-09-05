@@ -70,7 +70,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
               href="#home"
               className="flex items-center gap-3 text-text hover:opacity-95 transition-all group"
             >
-              <img src={logoImg} alt="MP Logo" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+              <img src="/logo.png" alt="MP Logo" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
             </a>
           </motion.div>
 
