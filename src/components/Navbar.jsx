@@ -63,7 +63,7 @@ export const Navbar = ({ currentTheme, toggleTheme, onOpenConsole }) => {
 
 
           {/* Center Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-2">
+          <nav className="hidden lg:flex items-center justify-center flex-1 space-x-2">
             {navItems.map((item) => {
               const isActive = activeSection === item.id;
               return (
